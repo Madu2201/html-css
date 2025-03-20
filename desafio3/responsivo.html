@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /*Se a tela for menor que 260px, o elemento main continuará com 260px, e o conteúdo dentro dele poderá gerar uma barra de rolagem horizontal.*/
+            min-width: 260px;
+            /*Se a tela for maior que 800px, o elemento main continuará com 800px, e o espaço restante será distribuido pelas margens laterais.*/
+            max-width: 800px;
+
+            /*Centraliza horizontalmente de forma automática*/
+            margin: auto;
+        }
+
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, accusantium. Est consequatur assumenda illum atque, cupiditate nemo doloribus deserunt possimus quia perspiciatis ipsam voluptatum, recusandae aliquid exercitationem eligendi enim . Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minus magnam quas numquam tempore, quae repellendus culpa aliquam odit consequuntur recusandae a porro sapiente quidem, deserunt alias aliquid aut facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos necessitatibus odit, vel consequuntur soluta, alias porro nam temporibus aspernatur officia voluptate cumque pariatur eius repellendus in exercitationem ipsam id. Modi.</p>
+        <picture> 
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok, criadora do Bugdroid">
+        </picture>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, accusantium. Est consequatur assumenda illum atque, cupiditate nemo doloribus deserunt possimus quia perspiciatis ipsam voluptatum, recusandae aliquid exercitationem eligendi enim . Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minus magnam quas numquam tempore, quae repellendus culpa aliquam odit consequuntur recusandae a porro sapiente quidem, deserunt alias aliquid aut facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos necessitatibus odit, vel consequuntur soluta, alias porro nam temporibus aspernatur officia voluptate cumque pariatur eius repellendus in exercitationem ipsam id. Modi.</p>
+    </main>
+</body>
+</html>

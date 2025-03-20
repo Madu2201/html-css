@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = clildren
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a{
+            color: rgb(231, 45, 45);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: rgb(160, 20, 20);
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        .especial::before{
+            content: '\002192  ';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        .especial::after{
+            content: ' \002190';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Madu2201" target="_blank">Perfil GitHub</a></li>
+        <li><a href="https://www.youtube.com/@filmeslegais5964" target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.canva.com" target="_blank">Site do Canva</a></li>
+    </ul>
+</body>
+</html>
